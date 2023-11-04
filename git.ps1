@@ -17,7 +17,7 @@ function Set-Upstream {
     git remote add upstream $upstreamUrl
 }
 
-function Fetch-And-Merge-Upstream {
+function Merge-Upstream {
     git fetch upstream
     git merge upstream/main
 }
@@ -65,7 +65,7 @@ if (-not (Test-Path .git)) {
         if (-not $upstream) {
             Set-Upstream
         }
-        Fetch-And-Merge-Upstream
+        Merge-Upstream
 
         # 自动处理可能的合并冲突
         $conflicts = git ls-files -u
