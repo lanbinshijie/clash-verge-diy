@@ -94,7 +94,7 @@ if (-not (Test-Path .git)) {
         # 推送到两个远程仓库
         git push github-origin main
         git push gitea-origin main
-    } elseif (-not $update) {
+    } elseif (-not $update -and -not $c) {
         Write-Host "Invalid or missing parameters."
     }
 }

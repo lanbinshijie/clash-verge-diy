@@ -1,3 +1,20 @@
+## v1.3.8-L
+
+### Notice
+
+- this is the version that only for Lanbin (but you can use it if you want)
+- just change some logos and icons
+
+### Features
+
+- No features
+
+### Bug Fixes
+
+- No bug fixed
+
+---
+
 ## v1.3.8
 
 ### Features
