@@ -15,7 +15,8 @@ const SIDECAR_HOST = execSync("rustc -vV")
   .match(/(?<=host: ).+(?=\s*)/g)[0];
 
 /* ======= clash ======= */
-const CLASH_STORAGE_PREFIX = "https://release.dreamacro.workers.dev/";
+const CLASH_STORAGE_PREFIX =
+  "https://github.com/Kuingsmile/clash-core/releases/";
 const CLASH_URL_PREFIX =
   "https://github.com/Dreamacro/clash/releases/download/premium/";
 const CLASH_LATEST_DATE = "latest";
@@ -75,7 +76,7 @@ function clashS3() {
 
   const isWin = platform === "win32";
   const urlExt = isWin ? "zip" : "gz";
-  const downloadURL = `${CLASH_STORAGE_PREFIX}${CLASH_LATEST_DATE}/${name}-${CLASH_LATEST_DATE}.${urlExt}`;
+  const downloadURL = `${CLASH_STORAGE_PREFIX}${CLASH_LATEST_DATE}/${name}-v1.18.0.${urlExt}`;
   const exeFile = `${name}${isWin ? ".exe" : ""}`;
   const zipFile = `${name}.${urlExt}`;
 
@@ -84,7 +85,8 @@ function clashS3() {
     targetFile: `clash-${SIDECAR_HOST}${isWin ? ".exe" : ""}`,
     exeFile,
     zipFile,
-    downloadURL,
+    downloadURL:
+      "https://github.com/Kuingsmile/clash-core/releases/download/1.18/clash-windows-amd64-v3-v1.18.0.zip",
   };
 }
 
@@ -101,7 +103,8 @@ function clashMeta() {
     targetFile: `clash-meta-${SIDECAR_HOST}${isWin ? ".exe" : ""}`,
     exeFile,
     zipFile,
-    downloadURL,
+    downloadURL:
+      "https://github.com/MetaCubeX/Clash.Meta/releases/download/v1.16.0/clash.meta-windows-amd64-compatible-v1.16.0.zip",
   };
 }
 
