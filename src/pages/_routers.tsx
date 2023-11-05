@@ -4,11 +4,17 @@ import ProfilesPage from "./profiles";
 import SettingsPage from "./settings";
 import ConnectionsPage from "./connections";
 import RulesPage from "./rules";
+import HomePage from "./home";
 
 export const routers = [
   {
-    label: "Label-Proxies",
+    label: "Label-Home",
     link: "/",
+    ele: HomePage,
+  },
+  {
+    label: "Label-Proxies",
+    link: "/proxies",
     ele: ProxiesPage,
   },
   {
