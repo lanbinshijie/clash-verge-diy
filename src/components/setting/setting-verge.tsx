@@ -17,6 +17,9 @@ import { ThemeViewer } from "./mods/theme-viewer";
 import { GuardState } from "./mods/guard-state";
 import { LayoutViewer } from "./mods/layout-viewer";
 import { UpdateViewer } from "./mods/update-viewer";
+
+import { ErkaiViewer } from "./mods/erkai-author-viewer";
+
 import getSystem from "@/utils/get-system";
 
 interface Props {
@@ -37,6 +40,7 @@ const SettingVerge = ({ onError }: Props) => {
   const themeRef = useRef<DialogRef>(null);
   const layoutRef = useRef<DialogRef>(null);
   const updateRef = useRef<DialogRef>(null);
+  const erkaiRef = useRef<DialogRef>(null);
 
   const onChangeData = (patch: Partial<IVergeConfig>) => {
     mutateVerge({ ...verge, ...patch }, false);
@@ -63,6 +67,7 @@ const SettingVerge = ({ onError }: Props) => {
       <MiscViewer ref={miscRef} />
       <LayoutViewer ref={layoutRef} />
       <UpdateViewer ref={updateRef} />
+      <ErkaiViewer ref={erkaiRef} />
 
       <SettingItem label={t("Language")}>
         <GuardState
@@ -192,8 +197,19 @@ const SettingVerge = ({ onError }: Props) => {
         </SettingItem>
       )}
 
+      <SettingItem label={t("Erkai Author")}>
+        <IconButton
+          color="inherit"
+          size="small"
+          sx={{ my: "2px" }}
+          onClick={() => erkaiRef.current?.open()}
+        >
+          <ArrowForward />
+        </IconButton>
+      </SettingItem>
+
       <SettingItem label={t("Verge Version")}>
-        <Typography sx={{ py: "7px", pr: 1 }}>v{version}</Typography>
+        <Typography sx={{ py: "7px", pr: 1 }}>v{version}.1</Typography>
       </SettingItem>
     </SettingList>
   );
