@@ -36,6 +36,7 @@ export const ErkaiViewer = forwardRef<DialogRef>((props, ref) => {
         window.open("https://git.lanbin.top/lanbinshijie/clash-verge-diy.git")
       }
       onClose={() => setOpen(false)}
+      //   onClose={() => {Notice.success("感谢")}}
       onOk={() => setOpen(false)}
     >
       <Typography variant="body1" gutterBottom>

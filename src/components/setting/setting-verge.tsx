@@ -183,34 +183,6 @@ const SettingVerge = ({ onError }: Props) => {
           <ArrowForward />
         </IconButton>
       </SettingItem>
-
-      {!(OS === "windows" && WIN_PORTABLE) && (
-        <SettingItem label={t("Check for Updates")}>
-          <IconButton
-            color="inherit"
-            size="small"
-            sx={{ my: "2px" }}
-            onClick={onCheckUpdate}
-          >
-            <ArrowForward />
-          </IconButton>
-        </SettingItem>
-      )}
-
-      <SettingItem label={t("Erkai Author")}>
-        <IconButton
-          color="inherit"
-          size="small"
-          sx={{ my: "2px" }}
-          onClick={() => erkaiRef.current?.open()}
-        >
-          <ArrowForward />
-        </IconButton>
-      </SettingItem>
-
-      <SettingItem label={t("Verge Version")}>
-        <Typography sx={{ py: "7px", pr: 1 }}>v{version}.1</Typography>
-      </SettingItem>
     </SettingList>
   );
 };

@@ -7,6 +7,7 @@ import { openWebUrl } from "@/services/cmds";
 import SettingVerge from "@/components/setting/setting-verge";
 import SettingClash from "@/components/setting/setting-clash";
 import SettingSystem from "@/components/setting/setting-system";
+import SettingVersion from "@/components/setting/setting-version";
 
 const SettingPage = () => {
   const { t } = useTranslation();
@@ -41,8 +42,12 @@ const SettingPage = () => {
         <SettingSystem onError={onError} />
       </Paper>
 
-      <Paper sx={{ borderRadius: 1, boxShadow: 2 }}>
+      <Paper sx={{ borderRadius: 1, boxShadow: 2, mb: 3 }}>
         <SettingVerge onError={onError} />
+      </Paper>
+
+      <Paper sx={{ borderRadius: 1, boxShadow: 2 }}>
+        <SettingVersion onError={onError} />
       </Paper>
     </BasePage>
   );
