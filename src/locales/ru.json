@@ -6,6 +6,8 @@
   "Label-Rules": "Правила",
   "Label-Settings": "Настройки",
 
+  "Rules": "Правила",
+
   "Connections": "Соединения",
   "Logs": "Логи",
   "Clear": "Очистить",
@@ -85,6 +87,7 @@
   "Open Core Dir": "Открыть папку ядра",
   "Open Logs Dir": "Открыть папку логов",
   "Verge Version": "Версия Verge",
+  "Erkai Author": "Автор Erkai",
   "theme.light": "Светлая",
   "theme.dark": "Тёмная",
   "theme.system": "Системная",

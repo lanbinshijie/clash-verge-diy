@@ -6,6 +6,8 @@
   "Label-Rules": "Rules",
   "Label-Settings": "Settings",
 
+  "Rules": "Rules",
+
   "Connections": "Connections",
   "Logs": "Logs",
   "Clear": "Clear",
@@ -92,6 +94,7 @@
   "Open Logs Dir": "Open Logs Dir",
   "Check for Updates": "Check for Updates",
   "Verge Version": "Verge Version",
+  "Erkai Author": "Second Author",
   "theme.light": "Light",
   "theme.dark": "Dark",
   "theme.system": "System",

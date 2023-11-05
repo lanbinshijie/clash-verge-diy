@@ -16,6 +16,8 @@
   "direct": "直连",
   "script": "脚本",
 
+  "Rules": "规则",
+
   "Profiles": "配置",
   "Profile URL": "配置文件链接",
   "Import": "导入",
@@ -92,6 +94,7 @@
   "Open Logs Dir": "日志目录",
   "Check for Updates": "检查更新",
   "Verge Version": "应用版本",
+  "Erkai Author": "二开作者",
   "theme.light": "浅色",
   "theme.dark": "深色",
   "theme.system": "系统",
