@@ -22,10 +22,17 @@ const HomePage = () => {
   });
 
   return (
-    <BasePage title="Clash Verge">
-      <Paper sx={{ borderRadius: 1, boxShadow: 2 }}>
-        <Homepage onError={onError} />
-      </Paper>
+    <BasePage title="Clash Verge" contentStyle={{ height: "100%" }}>
+      <iframe
+        src="https://lanbin.top/clash-verge/"
+        style={{
+          width: "100%",
+          height: "100%",
+          border: "none",
+          overflow: "hidden",
+          outline: "none",
+        }}
+      ></iframe>
     </BasePage>
   );
 };
