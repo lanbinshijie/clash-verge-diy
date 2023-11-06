@@ -9,7 +9,7 @@ import HomePage from "./home";
 export const routers = [
   {
     label: "Label-Proxies",
-    link: "/proxies",
+    link: "/",
     ele: ProxiesPage,
   },
   {
@@ -39,7 +39,7 @@ export const routers = [
   },
   {
     label: "Label-Home",
-    link: "/",
+    link: "/home",
     ele: HomePage,
   },
 ];
